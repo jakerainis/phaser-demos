@@ -11,13 +11,9 @@ export default class PauseScene extends BaseScene {
       { scene: 'MenuScene', label: 'Enough Already' },
     ]
   }
-
   create() {
     super.create()
     this.createMenu()
-  }
-  update() {
-    //
   }
 
   createMenu() {
@@ -45,6 +41,5 @@ export default class PauseScene extends BaseScene {
       this.scene.stop('GameScene')
       this.scene.start('MenuScene')
     }
-    // scene ? this.scene.start(scene) : this.game.destroy(true)
   }
 }

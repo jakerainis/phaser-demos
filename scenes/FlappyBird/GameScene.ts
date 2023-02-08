@@ -173,7 +173,6 @@ export default class GameScene extends BaseScene {
     if (this.score > 5) this.difficulty = 'medium'
     if (this.score > 10) this.difficulty = 'hard'
     if (this.score > 15) this.difficulty = 'oof'
-    // store.getState().updateScore(this.score)
   }
   handlePauseState() {
     this.isPaused = true
@@ -186,9 +185,7 @@ export default class GameScene extends BaseScene {
     pLower: Physics.Arcade.Sprite
   ) {
     const rightMostPipe = this.getRightMostPipe()
-    // const horzDistance = PMath.Between(300, 600)
     const horzDistance = difficulties[this.difficulty].horzDistance
-    // const vertDistance = PMath.Between(150, 250)
     const vertDistance = difficulties[this.difficulty].vertDistance
     const vertPos = PMath.Between(30, this.sceneH - 30 - vertDistance)
     pUpper

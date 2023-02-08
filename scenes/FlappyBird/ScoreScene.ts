@@ -6,17 +6,12 @@ export default class ScoreScene extends BaseScene {
   constructor() {
     super('ScoreScene')
   }
-  preload() {
-    //
-  }
   create() {
     super.create()
     this.createBack()
     this.createScore()
   }
-  update() {
-    //
-  }
+
   createBack() {
     const backText = this.add.text(16, 16, `Back`, { fontSize: '18px' })
     backText.setInteractive()

@@ -17,7 +17,4 @@ export default class PreloadScene extends BaseScene {
     super.create()
     this.scene.start('MenuScene')
   }
-  update() {
-    //
-  }
 }
