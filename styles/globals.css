@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --baseDark: 29, 31, 35; /* rgb(29,31,35) */
+  --baseMedium: 33, 37, 43; /* rgb(33,37,43) */
+  --baseLight: 40, 44, 52; /* rgb(40,44,52) */
+
+  --greyDark: 127, 132, 142; /* rgb(127,132,142) */
+  --greyLight: 171, 178, 191; /* rgb(171,178,191) */
+
+  --blue: 97, 175, 239; /* rgb(97,175,239) */
+  --green: 152, 295, 121; /* rgb(152,295,121) */
+  --purple: 198, 120, 221; /* rgb(198,120,221) */
+  --red: 158, 85, 94; /* rgb(158,85,94) */
+
+  --yellowDark: 209, 154, 102; /* rgb(209,154,102) */
+  --yellowLight: 229, 192, 123; /* rgb(229,192,123) */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  @apply max-w-full overflow-x-hidden bg-baseDark;
+  /* max-width: 100vw;
+  overflow-x: hidden; */
+}
+
+body {
+}

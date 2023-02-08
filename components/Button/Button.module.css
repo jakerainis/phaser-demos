@@ -1,0 +1,33 @@
+.base {
+  @apply px-4 py-2 text-sm font-bold tracking-wider text-center uppercase transition-all duration-300 rounded-lg;
+}
+
+.base.busy {
+  @apply opacity-75 cursor-wait;
+  @apply hover:bg-opacity-25;
+}
+
+.base.primary {
+  @apply text-white bg-opacity-25 bg-green;
+  @apply hover:bg-green hover:bg-opacity-50;
+}
+
+.base.secondary {
+  @apply text-white bg-opacity-25 bg-blue;
+  @apply hover:bg-blue hover:bg-opacity-50;
+}
+
+.base.warning {
+  @apply text-white bg-opacity-50 bg-red;
+  @apply hover:bg-red hover:bg-opacity-75;
+}
+
+.base.text {
+  @apply p-0 text-white;
+  @apply hover:text-greyLight;
+}
+
+.base.disabled {
+  @apply text-white text-opacity-50 cursor-not-allowed bg-greyDark;
+  @apply hover:bg-greyDark hover:text-white hover:text-opacity-50;
+}

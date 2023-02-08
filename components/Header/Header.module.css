@@ -1,0 +1,7 @@
+.base {
+  @apply p-3 border-b bg-baseLight border-greyDark;
+}
+
+.title {
+  @apply text-3xl tracking-widest text-center text-white uppercase;
+}

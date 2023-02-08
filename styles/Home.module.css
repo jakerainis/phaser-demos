@@ -1,0 +1,4 @@
+.main {
+  @apply relative flex justify-center block max-w-full py-8;
+  @apply sm:px-12;
+}
