@@ -124,6 +124,7 @@ export default class GameScene extends BaseScene {
     return rightMostX
   }
   handleCountdown() {
+    this.difficulty = 'easy'
     this.countdown?.destroy()
     this.countdownText?.destroy()
     this.physics.pause()
