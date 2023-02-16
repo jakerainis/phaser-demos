@@ -1,21 +1,25 @@
-import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 import css from '@/styles/Home.module.css'
 
 import Header from '@/components/Header/Header'
 import HeadTag from '@/components/HeadTag/HeadTag'
 
-const Game = dynamic(() => import('@/components/Game/Game'), {
-  ssr: false,
-})
-
 export default function Home() {
   return (
     <>
       <HeadTag />
       <Header />
+      <h1 className="mt-12 text-2xl text-center text-white">GAMES</h1>
       <main className={css.main}>
-        <Game />
+        <ul>
+          <li>
+            <Link href="/platformer">Platformer (Requires Keyboard)</Link>
+          </li>
+          <li>
+            <Link href="/flappy-bird">Flappy Bird</Link>
+          </li>
+        </ul>
       </main>
     </>
   )

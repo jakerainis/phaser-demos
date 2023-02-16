@@ -9,7 +9,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
   // Enforce consistent import ordering
   rules: {
-    '@typescript-eslint/no-explicit-any': 2,
+    '@typescript-eslint/ban-ts-comment': 1,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
@@ -17,6 +17,7 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 0,
     '@typescript-eslint/member-delimiter-style': 0,
     '@typescript-eslint/no-explicit-any': 1,
+    '@typescript-eslint/no-explicit-any': 2,
     '@typescript-eslint/no-unused-vars': [1, { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-var-requires': 0,

@@ -5,5 +5,13 @@
 
 .main canvas {
   height: 100% !important;
+  max-width: 1200px !important;
+  /* min-height: 400px; */
   width: 100% !important;
+}
+.main ul li {
+  @apply text-white list-disc;
+}
+.main ul li a {
+  @apply font-bold text-center text-white uppercase hover:underline text-green;
 }
